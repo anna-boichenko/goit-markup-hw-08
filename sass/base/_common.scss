@@ -19,7 +19,16 @@ body {
     color: var(--main-font-color);
     background-color: var(--main-color);
 }
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+@media screen and (min-width: 480px) {
+    .section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .section {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }

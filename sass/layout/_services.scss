@@ -1,3 +1,13 @@
+
+
+
+@media screen and (max-width: 1199px) {
+    .services-section {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
 .services__heading {
     margin-bottom: 50px;
 }
@@ -33,4 +43,5 @@
     text-transform: uppercase;
     color: var(--main-color);
     background-color: rgba(47, 48, 58, 0.8);
+}
 }

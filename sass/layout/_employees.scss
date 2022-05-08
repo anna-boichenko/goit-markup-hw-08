@@ -2,36 +2,15 @@
     background-color: #f5f4fa;
 }
 
-.employees-section .secondary-heading {
-    margin-bottom: 50px;
-}
-
-.employees__list {
-    display: flex;
-    flex-wrap: wrap;
+.employees__card {
+    background-color: var(--main-color);
+    flex-basis: 450px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .employees__list img {
     display: block;
-}
-
-.employees__card {
-    background-color: var(--main-color);
-    flex-basis: 270px;
-    margin-right: 30px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-
-    &:nth-child(4n+4) {
-        margin-right: 0px;
-    }
-}
-
-.employees__content-wrapper {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 32px;
-    padding-right: 32px;
 }
 
 .employees__name {
@@ -81,3 +60,161 @@
         fill: var(--main-color);
     }
 }
+
+@media screen and (max-width: 767px) {
+    .employees__card {
+        display: block;
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    .employees__content-wrapper {
+        padding-top: 30px;
+        padding-bottom: 24px;
+        padding-left: 122px;
+        padding-right: 122px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .employees__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .employees-section .secondary-heading {
+        margin-bottom: 30px;
+    }
+
+    .employees__card {
+        flex-basis: 354px;
+        margin-bottom: 30px;
+        &:nth-last-child(-n+2) {
+            margin-bottom: 0px;
+        }
+        margin-right: 30px;
+    }
+
+    .employees__content-wrapper {
+        padding-top: 30px;
+        padding-bottom: 24px;
+        padding-left: 74px;
+        padding-right: 74px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .employees__card {
+         &:nth-child(2n+2) {
+             margin-right: 0px;
+         }
+}
+}
+
+@media screen and (min-width: 1200px) {
+    .employees-section .secondary-heading {
+        margin-bottom: 50px;
+    } 
+    
+    .employees__card {
+        flex-basis: 270px;
+         margin-right: 30px;
+         margin-bottom: 0px;
+
+            &:nth-child(4n+4) {
+                margin-right: 0px;
+            }
+    }
+
+    .employees__content-wrapper {
+        padding-bottom: 30px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+// .employees-section {
+//     background-color: #f5f4fa;
+// }
+
+// .employees-section .secondary-heading {
+//     margin-bottom: 50px;
+// }
+
+// .employees__list {
+//     display: flex;
+//     flex-wrap: wrap;
+// }
+
+// .employees__list img {
+//     display: block;
+// }
+
+// .employees__card {
+//     background-color: var(--main-color);
+//     flex-basis: 270px;
+//     margin-right: 30px;
+//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+//     border-radius: 0px 0px 4px 4px;
+
+//     &:nth-child(4n+4) {
+//         margin-right: 0px;
+//     }
+// }
+
+// .employees__content-wrapper {
+//     padding-top: 30px;
+//     padding-bottom: 30px;
+//     padding-left: 32px;
+//     padding-right: 32px;
+// }
+
+// .employees__name {
+//     margin-bottom: 10px;
+//     font-weight: 500;
+//     font-size: 16px;
+//     line-height: 1.19;
+//     text-align: center;
+//     letter-spacing: 0.03em;
+// }
+
+// .employees__position {
+//     margin-bottom: 16px;
+//     font-size: 16px;
+//     line-height: 1.19;
+//     text-align: center;
+//     letter-spacing: 0.03em;
+//     color: var(--secondary-font-color);
+// }
+
+// .social-list {
+//     display: flex;
+//     justify-content: space-between;
+// }
+
+// .social-list__link {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     width: 44px;
+//     height: 44px;
+//     border-radius: 50%;
+//     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//     &:hover,
+//     &:focus {
+//         background-color: var(--accent-color);
+//     }
+// }
+
+// .social-list__icon {
+//     fill: #AFB1B8;
+//     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//     .social-list__link:hover &,
+//     .social-list__link:focus & {
+//         fill: var(--main-color);
+//     }
+// }

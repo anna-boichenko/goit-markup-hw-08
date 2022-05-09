@@ -49,27 +49,31 @@
     <div class="mobile-menu" data-menu>
         <div class="container mobile-menu__container">
         <button class="mobile-menu__close-button" data-menu-close>
-            <svg class="mobile-menu__close-icon" width="40" height="40">
-                <use href="./images/icons.svg#icon-close"></use>
+            <svg class="mobile-menu__close-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-close_24px"></use>
             </svg>
         </button>
-        <ul class="list">
-            <li>
-                <a href="" class="link">Студия</a>
+        <ul class="mobile-menu__nav list">
+            <li class="mobile-menu__nav-item">
+                <a href="./index.html" class="mobile-menu__link mobile-menu__nav-link">Студия</a>
             </li>
-            <li>
-                <a href="" class="link">Портфолио</a>
+            <li class="mobile-menu__nav-item">
+                <a href="./portfolio.html" class="mobile-menu__link mobile-menu__nav-link">Портфолио</a>
             </li>
-            <li>
-                <a href="" class="link">Контакты</a>
+            <li class="mobile-menu__nav-item">
+                <a href="" class="mobile-menu__link mobile-menu__nav-link">Контакты</a>
             </li>
         </ul>
-
-    <ul>
-        <li><a href="">+38 096 111 11 11</a></li>
-        <li><a href="">info@devstudio.com</a></li>
+    <ul class="list mobile-menu__contact-list">
+        <li class="item"><a href="tel:+380961111111" class="mobile-menu__link mobile-menu__tel-link">+38 096 111 11 11</a></li>
+        <li class="item"><a href="mailto:info@devstudio.com" class="mobile-menu__link mobile-menu__mail-link">info@devstudio.com</a></li>
     </ul>
-
+    <ul class="list mobile-menu__social-list">
+        <li class="item"><a href="" class="mobile-menu__link">Instagram</a><span class="mobile-menu__social-separator"></span></li>
+        <li class="item"><a href="" class="mobile-menu__link">Twitter</a><span class="mobile-menu__social-separator"></span></li>
+        <li class="item"><a href="" class="mobile-menu__link">Facebook</a><span class="mobile-menu__social-separator"></span></li>
+        <li class="item"><a href="" class="mobile-menu__link">LinkedIn</a></li>
+    </ul>
     </div>
     </header>
    <main>
@@ -357,20 +361,20 @@
        </div>
    </section>
 </main>
-<!--Футер-->
-<!-- <footer class="footer">
-    <div class="container footer-container">
+<!-- Футер-->
+<footer class="footer">
+    <div class="container footer-container footer__wrapper">
         <div class="footer-contact__wrapper">
     <a href="./index.html" class="logo footer__logo">Web<span class="logo-studio-white">Studio</span></a>
-    <address class="address">г. Киев, пр-т Леси Украинки, 26</address> -->
+    <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
     <!--Контакты-->
-    <!-- <ul class="list">
+    <ul class="list">
         <li class="footer-contact__item"><a href="mailto:info@devstudio.com" class="footer-contact__link">info@devstudio.com</a></li>
         <li class="footer-contact__item"><a href="tel:+380961111111" class="footer-contact__link">+38 096 111 11 11</a></li>
     </ul>
-    </div> -->
+    </div>
     <!-- Социальные сети -->
-    <!-- <div class="footer-social">
+    <div class="footer-social">
     <p class="footer-social__heading">присоединяйтесь</p>
     <ul class="list footer-social__list">
         <li class="footer-social__item">
@@ -402,9 +406,9 @@
             </a>
         </li>
     </ul>
-    </div> -->
+    </div>
     <!-- Форма для подписки -->
-    <!-- <form class="form-subscribe">
+    <form class="form-subscribe">
         <label class="subscribe__label">Подпишитесь на рассылку</label>
             <div class="subscribe__input-wrapper">
             <input name="user-subscribe-email" type="email" placeholder="E-mail" class="subscribe__email">
@@ -413,10 +417,10 @@
                 <use href="./images/icons.svg#icon-send"></use>
             </svg>
         </button>
-    </div>
+     </div>
     </form>
     </div>
-</footer> -->
+</footer>
 <!-- Модальное окно для заявки -->
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">

@@ -29,8 +29,6 @@
 
 
 
-
-
 @media screen and (max-width: 767px) {
     .principles__heading {
         text-align: center;
@@ -42,6 +40,8 @@
 
     .principles__image-background {
         width: 450px;
+        min-width: 450px;
+
     }
 
     .principles__box {

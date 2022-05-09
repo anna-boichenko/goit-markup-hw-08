@@ -1346,7 +1346,7 @@ header {
     flex-wrap: wrap;
   }
   .work__card {
-    width: calc((100% - 2 * 30px) / 2);
+    width: 450px;
   }
   .work__card:not(:last-child) {
     margin-bottom: 30px;
@@ -1376,6 +1376,7 @@ header {
     padding: 63px 24px;
   }
   .work__card {
+    width: 370px;
     flex-basis: 370px;
     margin-right: 30px;
   }

@@ -1346,7 +1346,7 @@ header {
     flex-wrap: wrap;
   }
   .work__card {
-    width: 450px;
+    width: 354px;
   }
   .work__card:not(:last-child) {
     margin-bottom: 30px;

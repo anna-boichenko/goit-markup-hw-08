@@ -66,23 +66,24 @@
         fill: var(--main-color);
     }
 }
-    .employees-section .secondary-heading {
-        margin-bottom: 30px;
-    }
 
-@media screen and (min-width: 480px) {
-    .employees__content-wrapper {
-        padding-top: 30px;
-        padding-bottom: 24px;
-    }
+.employees-section .secondary-heading {
+    margin-bottom: 30px;
 }
+
 @media screen and (max-width: 767px) {
     .employees__card {
         display: block;
         max-width: 480px;
+
         &:not(:last-child) {
             margin-bottom: 30px;
         }
+    }
+
+    .employees__content-wrapper {
+        padding-top: 30px;
+        padding-bottom: 24px;
     }
 }
 

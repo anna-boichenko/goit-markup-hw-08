@@ -362,13 +362,12 @@ body {
 }
 
 .contact-form__checkbox-label {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   font-style: normal;
   letter-spacing: 0.03em;
   color: var(--secondary-font-color);
-  display: inline-block;
 }
 
 .contact-form__checkbox-label::before {
@@ -1053,13 +1052,6 @@ header {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 480px) {
-  .employees__content-wrapper {
-    padding-top: 30px;
-    padding-bottom: 24px;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .employees__card {
     display: block;
@@ -1067,6 +1059,10 @@ header {
   }
   .employees__card:not(:last-child) {
     margin-bottom: 30px;
+  }
+  .employees__content-wrapper {
+    padding-top: 30px;
+    padding-bottom: 24px;
   }
 }
 

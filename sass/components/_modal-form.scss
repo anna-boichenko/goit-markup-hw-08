@@ -88,13 +88,12 @@
 }
 
 .contact-form__checkbox-label {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     font-style: normal;
     letter-spacing: 0.03em;
     color: var(--secondary-font-color);
-     display: inline-block;
     
 
     &::before {

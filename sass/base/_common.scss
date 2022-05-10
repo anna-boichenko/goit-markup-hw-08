@@ -19,7 +19,7 @@ body {
     color: var(--main-font-color);
     background-color: var(--main-color);
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
     .section {
         padding-top: 60px;
         padding-bottom: 60px;

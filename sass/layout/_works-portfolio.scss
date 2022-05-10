@@ -76,6 +76,11 @@
     .work__overlay {
         padding: 77px 24px;
     }
+    .work__card {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -85,6 +90,7 @@
     }
     .work__card {
         width: 354px;
+        
         &:not(:last-child) {
         margin-bottom: 30px;
         }
@@ -94,16 +100,21 @@
     }
 
     .work__content-wrapper {
-        padding: 20px 24px 56px 24px;
+        padding: 20px 24px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .work__content-wrapper {
+        flex-grow: 1;
+    }
+    .work__card {
+        margin-right: 30px;
+        flex-basis: calc(100% / 2 - 30px)
     }
 }
 
 @media screen and (max-width: 1199px) {
-    .work__card {
-        margin-right: 30px;
 
-        flex-basis: calc(100% / 2 - 30px)
-    }
 }
 
 

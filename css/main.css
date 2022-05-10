@@ -365,7 +365,6 @@ body {
   align-items: center;
   justify-content: center;
   font-style: normal;
-  width: 370px;
   letter-spacing: 0.03em;
   color: var(--secondary-font-color);
 }

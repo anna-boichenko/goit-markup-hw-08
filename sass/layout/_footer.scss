@@ -103,14 +103,10 @@
 }
 @media screen and (min-width: 768px) {
 
-        .footer-contact__wrapper {
-            margin-right: 165px;
-        }
-
         .footer__wrapper {
             display: flex;
             align-items: baseline;
-            justify-content: center;
+            justify-content: space-around;
             flex-wrap: wrap;
         }
 }

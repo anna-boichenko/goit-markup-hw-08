@@ -102,6 +102,10 @@
         }
         margin-right: 30px;
     }
+
+    .employees__content-wrapper {
+        padding: 30px 74px 24px 74px;
+    }
 }
 
 @media screen and (max-width: 1199px) {
@@ -110,6 +114,7 @@
              margin-right: 0px;
          }
     }
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -128,8 +133,6 @@
     }
 
     .employees__content-wrapper {
-        padding-bottom: 30px;
-        padding-left: 32px;
-        padding-right: 32px;
+        padding: 30px 32px;
     }
 }

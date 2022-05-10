@@ -1079,6 +1079,9 @@ header {
   .employees__card:nth-last-child(-n+2) {
     margin-bottom: 0px;
   }
+  .employees__content-wrapper {
+    padding: 30px 74px 24px 74px;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -1100,9 +1103,7 @@ header {
     margin-right: 0px;
   }
   .employees__content-wrapper {
-    padding-bottom: 30px;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding: 30px 32px;
   }
 }
 

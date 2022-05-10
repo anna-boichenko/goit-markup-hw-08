@@ -152,7 +152,7 @@
         }
     }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
     .contact-form__checkbox-label {
         font-size: 12px;
         line-height: 1.16;
@@ -161,18 +161,20 @@
         width: 370px;
     }
 }
-@media screen and (min-width: 768px) {
-    .contact-form__checkbox-label {
-        font-size: 14px;
-        line-height: 1.71;
-    }
-}
 
 @media screen and (min-width: 1200px) {
     .contact-form__comment {
         &::placeholder {
             font-size: 12px;
         }
+    .contact-form__checkbox-label {
+        width: 346px;
+    }
+    }
+    .contact-form__checkbox-label {
+        font-size: 14px;
+        line-height: 1.71;
+
     }
 }
 

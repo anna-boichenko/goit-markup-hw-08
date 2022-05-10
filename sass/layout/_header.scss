@@ -41,11 +41,12 @@ header {
     }
     
     .mobile-menu {
-        position: absolute;
+        position: fixed;
+        z-index: 1;
         top: 0;
         left: 0;
         width: 100vw;
-        height: 100vh;
+        height: 100%;
         overflow: auto;
         background-color: var(--main-color);
         opacity: 0;
@@ -72,12 +73,15 @@ header {
     
     .mobile-menu__container {
         position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         padding-top: 48px;
         padding-bottom: 48px;
     }
-    .mobile-menu__nav{
-            margin-bottom: 302px;
-    }
+    // .mobile-menu__nav{
+    //         margin-bottom: 302px;
+    // }
 
     .mobile-menu__nav-item:not(:last-child) {
         margin-bottom: 32px;

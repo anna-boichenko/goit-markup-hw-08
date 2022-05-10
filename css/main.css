@@ -332,6 +332,7 @@ body {
 
 .contact-form__comment-wrapper {
   display: block;
+  width: 100%;
   margin-bottom: 20px;
 }
 
@@ -367,6 +368,7 @@ body {
   font-style: normal;
   letter-spacing: 0.03em;
   color: var(--secondary-font-color);
+  display: inline-block;
 }
 
 .contact-form__checkbox-label::before {
@@ -423,21 +425,30 @@ body {
   background-color: var(--hover-button);
 }
 
+@media screen and (max-width: 767px) {
+  .modal {
+    width: 95%;
+    height: 95%;
+    overflow: auto;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .contact-form__checkbox-label {
     font-size: 12px;
     line-height: 1.16;
   }
-  .contact-form__comment-wrapper {
-    width: 370px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 580px;
+  }
   .contact-form__comment::placeholder {
     font-size: 12px;
   }
-  .contact-form__comment .contact-form__checkbox-label {
+  .contact-form__checkbox-label {
     width: 346px;
   }
   .contact-form__checkbox-label {
@@ -611,6 +622,7 @@ header {
   }
   .mobile-menu__container {
     position: relative;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1418,10 +1430,13 @@ header {
   .work__overlay {
     padding: 63px 24px;
   }
+  .work__card img {
+    width: 370px;
+  }
   .work__card {
     width: 370px;
     margin-right: 30px;
-    flex-basis: calc(100% / 3 - 30px);
+    flex-basis: calc((100% - 3*30px)/3);
   }
   .work__card:nth-child(3n+3) {
     margin-right: 0;

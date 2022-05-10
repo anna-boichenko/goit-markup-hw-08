@@ -58,6 +58,7 @@
 
 .contact-form__comment-wrapper {
     display: block;
+    width: 100%;
     margin-bottom: 20px;
 }
 
@@ -91,9 +92,10 @@
     align-items: center;
     justify-content: center;
     font-style: normal;
-    // width: 370px;
     letter-spacing: 0.03em;
     color: var(--secondary-font-color);
+     display: inline-block;
+    
 
     &::before {
         display: inline-block;
@@ -152,24 +154,33 @@
         }
     }
 
+@media screen and (max-width: 767px) {
+    .modal {
+        width: 95%;
+        height: 95%;
+        overflow: auto;
+    }
+}
+
 @media screen and (max-width: 1199px) {
     .contact-form__checkbox-label {
         font-size: 12px;
         line-height: 1.16;
     }
-    .contact-form__comment-wrapper {
-        width: 370px;
-    }
 }
 
 @media screen and (min-width: 1200px) {
+    .modal {
+        width: 528px;
+        height: 580px;
+    }
     .contact-form__comment {
         &::placeholder {
             font-size: 12px;
         }
+    }
     .contact-form__checkbox-label {
         width: 346px;
-    }
     }
     .contact-form__checkbox-label {
         font-size: 14px;

@@ -123,10 +123,14 @@
         padding: 63px 24px;
     }
 
+    .work__card img {
+        width: 370px;
+    }
+
     .work__card {
         width: 370px;
         margin-right: 30px;
-        flex-basis: calc(100% / 3 - 30px);
+        flex-basis: calc((100% - 3*30px)/3);
 
         &:nth-child(3n+3) {
             margin-right: 0;

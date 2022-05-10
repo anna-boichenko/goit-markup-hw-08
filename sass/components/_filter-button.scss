@@ -1,12 +1,11 @@
 .filter__list {
     display: flex;
-    // justify-content: center;
     flex-wrap: wrap;
 }
 
-// .filter__list .item:not(:last-child) {
-//     margin-right: 8px;
-// }
+.filter__list .item:not(:last-child) {
+    margin-right: 8px;
+}
 
 .filter__button {
     padding: 6px 22px;
@@ -43,20 +42,9 @@
     .filter__list .item:nth-last-of-type(-n+2) {
         margin-bottom: 0px;
     }
-
-    .filter__list .item {
-        margin-right: 8px;
-    }
-
-        .filter__list .item:nth-child(3n + 3) {
-            margin-right: 0px;
-        }
 }
 
 @media screen and (min-width: 768px) {
-    .filter__list .item {
-        margin-right: 8px;
-    }
 
     .filter__list {
         justify-content: center;
